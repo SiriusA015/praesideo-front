@@ -1,0 +1,119 @@
+@use '../../../styles/global.scss';
+@use '../../../styles/colors.scss';
+
+.overallChartGrid {
+  padding-bottom: 14px;
+  padding-right: 30px;
+
+  .overallChart {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .overallChartHeader {
+      padding: 32px;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      position: relative;
+      height: 200px;
+
+      canvas {
+        position: relative;
+        top: -50px;
+        height: 300px!important;
+        width: 300px!important;
+      }
+
+      .temperature {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 170px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        border: 0.5px solid colors.$botticelli;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        display:table;
+
+        h1 {
+          display:table-cell;
+          vertical-align:middle
+        }
+      }
+
+      .scopeContent {
+        padding-top: 16px;
+        display: flex;
+
+        .additionInformation {
+          text-transform: capitalize;
+          font-size: 12px;
+          line-height: 15px;
+          font-weight: 200;
+          font-style: normal;
+          font-family: Chivo;
+          text-align: center;
+          flex: 3;
+
+          .additionInformationValue {
+            font-family: Chivo-Bold;
+          }
+        }
+      }
+
+      .doughnutChartDegrees {
+        display: flex;
+        margin-top: -120px;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 200;
+        font-style: normal;
+        font-family: Chivo;
+        text-align: center;
+        color: colors.$paleSky;
+
+
+        .left {
+          flex: 2;
+          text-align: left;
+        }
+
+        .right {
+          flex: 2;
+          text-align: right;
+        }
+      }
+    }
+
+    .imageContainer {
+      height: 425px;
+      overflow: hidden;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      margin-top: auto;
+
+      img {
+        height: 100%;
+        margin-left: -100px;
+      }
+    }
+  }
+}
+
+
+.subGrid1 {
+  padding-bottom: 14px;
+  padding-right: 30px;
+}
+
+.subGrid2 {
+  padding-right: 30px;
+}

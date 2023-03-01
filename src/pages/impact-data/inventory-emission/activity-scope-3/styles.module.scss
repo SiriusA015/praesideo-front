@@ -1,0 +1,31 @@
+.formControl:global(.MuiFormControl-root) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  label {
+    margin-right: 16px;
+  }
+}
+
+.fieldLabel {
+  font-family: "Arsenal-Bold";
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  width: 100%;
+  padding-left: 15px;
+}
+
+.section:global(.MuiPaper-root) {
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.subtitle {
+  margin: 20px 0 10px 0;
+}
+
+.facilityName{
+  margin-bottom: 20px;
+}

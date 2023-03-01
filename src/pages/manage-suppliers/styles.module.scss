@@ -1,0 +1,38 @@
+@use "../../styles/colors";
+@use "../../styles/global";
+
+.container {
+  background-color: colors.$promenade;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 0 24px;
+  width: 100%;
+
+  .headContainer {
+    margin-left: 8px;
+    margin-right: 8px;
+
+    h1 {
+      white-space: nowrap;
+    }
+
+    .headWrapper {
+      display: flex;
+      margin-bottom: 8px;
+
+      .tabHeader {
+        margin-top: 8px;
+        margin-left: 16px;
+      }
+    }
+  }
+
+  .mainSection {
+    overflow: auto;
+    padding-bottom: 32px;
+
+    .tabPanel {
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@import "../../styles/colors";
+
+.form {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 100%;
+
+  h1 {
+    color: $sundance;
+  }
+
+  h2 {
+    margin-top: 6px;
+    margin-bottom: 15px;
+    color: $sundance;
+  }
+
+  h3, h4 {
+    color: white;
+  }
+
+  div.productContainer {
+    margin-bottom: 16px;
+  }
+
+  div.productVariantContainer {
+    margin-top: 64px;
+
+    .productVariantOption {
+      margin-bottom: 16px;
+      label {
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  button.fullWidth {
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .subscriptionOverview {
+    margin-top: 15px;
+    margin-bottom: 128px;
+  }
+
+  .productVariantDescriptionContainer {
+    display: flex;
+    margin-top: 15px;
+  }
+
+  .productVariantDescription {
+    margin-left: 16px;
+  }
+}

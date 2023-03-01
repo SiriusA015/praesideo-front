@@ -1,0 +1,101 @@
+@use "../../styles/colors.scss";
+@use "../../styles/global.scss";
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.field {
+  margin-bottom: 8px;
+  h3 {
+    margin: 19px 0 15px 0;
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  p {
+    margin-left: 8px;
+  }
+}
+
+.fileInput {
+  width: 0px;
+  height: 0px;
+  display: none;
+}
+
+.fileValue {
+  border: 1px solid colors.$borderColor;
+  border-radius: 4px;
+  padding: 10px 16px;
+  .label {
+    color: colors.$calypso;
+    font-family: "Arsenal-Bold";
+    font-size: 12px;
+    letter-spacing: 0.8px;
+  }
+  .file {
+    background-color: colors.$white;
+    padding: 11px 14px 6px 32px;
+    display: flex;
+    line-height: 14px;
+    margin-top: 6px;
+    border: 1px dashed colors.$borderColor;
+    border-radius: 4px;
+    .removeFile {
+      margin-left: auto;
+      svg {
+        margin-top: 50%;
+        margin-bottom: 50%;
+      }
+    }
+  }
+}
+
+.multiSelectGroup {
+  width: calc(50% - 8px);
+  margin-bottom: 8px;
+}
+
+.multiSelectWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px;
+  border-radius: 4px;
+  p.fieldLabel {
+    font-family: "Arsenal-Bold";
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+}
+
+.fieldsGroup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flag {
+  margin-right: 8px;
+}
+
+.tooltipField {
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  margin: 10px;
+  top: 0;
+  left: 0;
+}

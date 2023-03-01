@@ -1,0 +1,97 @@
+@use "../../../styles/colors";
+@use "../../../styles/global";
+
+.card {
+  box-sizing: border-box;
+  font-family: "Arsenal";
+  height: 450px;
+
+  .description {
+    margin-top: 16px;
+  }
+
+  .categoryContainer {
+    .categoryItem {
+      display: flex;
+      padding-left: 0;
+      padding-right: 0;
+
+      span:global(.MuiTypography-caption) {
+        flex: 1.25;
+        font-family: "Arsenal";
+        font-weight: bold;
+        text-align: end;
+      }
+    }
+  }
+
+  .progress:global(.MuiLinearProgress-root) {
+    flex: 3;
+    height: 10px;
+    margin-left: 10px;
+    border-radius: 3px;
+  }
+}
+
+.temperatureCard:global(.MuiPaper-root) {
+  background-color: colors.$white;
+
+  .value {
+    color: colors.$tiber;
+  }
+
+  & :global(.horizontal-linear-gauge) {
+    background: linear-gradient(
+      90deg,
+      colors.$olivine 0%,
+      colors.$creamBrulee 50%,
+      colors.$radical-red 100%
+    );
+  }
+
+  & .progress:global(.MuiLinearProgress-root) {
+    background-color: colors.$aquaHaze;
+  }
+
+  & .progressRed:global(.MuiLinearProgress-root) {
+    & :global(.MuiLinearProgress-bar) {
+      background-color: colors.$radical-red;
+    }
+  }
+  & .progressOrange:global(.MuiLinearProgress-root) {
+    & :global(.MuiLinearProgress-bar) {
+      background-color: colors.$tacao;
+    }
+  }
+  & .progressOlive:global(.MuiLinearProgress-root) {
+    & :global(.MuiLinearProgress-bar) {
+      background-color: colors.$olivine;
+    }
+  }
+  & .progressGreen:global(.MuiLinearProgress-root) {
+    & :global(.MuiLinearProgress-bar) {
+      background-color: colors.$apple;
+    }
+  }
+}
+
+.probabilityCard:global(.MuiPaper-root) {
+  background-color: colors.$white;
+
+  .highlightNumber2 {
+    color: colors.$sundance;
+  }
+
+  & :global(.horizontal-linear-gauge) {
+    background: colors.$glacier;
+  }
+
+  & .progress:global(.MuiLinearProgress-root) {
+    background-color: colors.$aquaHaze;
+    background-color: colors.$catskillWhite;
+
+    & :global(.MuiLinearProgress-bar) {
+      background-color: colors.$glacier;
+    }
+  }
+}

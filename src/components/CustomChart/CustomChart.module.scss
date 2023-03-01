@@ -1,0 +1,25 @@
+@use "../../styles/colors.scss";
+@use "../../styles/global.scss";
+
+.container {
+  color: colors.$headerColor;
+
+  .information {
+    display: flex;
+    position: relative;
+
+    .tabHeader {
+      position: absolute;
+      right: 0;
+      width: auto;
+    }
+  }
+
+  .tabContent {
+    padding: 32px 0 0 0;
+  }
+
+  .chartContainer {
+    height: 256px;
+  }
+}

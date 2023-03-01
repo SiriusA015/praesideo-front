@@ -1,0 +1,116 @@
+@use "../../styles/colors";
+@import "../../styles/global";
+
+.container {
+  background-color: colors.$promenade;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 0 24px;
+  width: 100%;
+
+  .title {
+    display: block;
+    flex: none;
+    margin-left: 8px;
+    margin-bottom: 8px;
+  }
+
+  .content {
+    display: flex;
+    flex: 1;
+    overflow: auto;
+
+    .formSection {
+      flex: 10;
+      padding-bottom: 32px;
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+
+      .widgetHeader {
+        display: flex;
+        position: relative;
+        margin-bottom: 32px;
+
+        .lastSaved {
+          font-size: 12px;
+          font-family: "Arsenal";
+          display: flex;
+          position: absolute;
+          right: 0;
+
+          span {
+            margin: 0 8px;
+          }
+        }
+      }
+
+      .navigation {
+        margin-top: auto;
+        padding-top: 16px;
+        display: flex;
+
+        .next {
+          margin-left: auto;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          padding-top: 16px;
+          padding-bottom: 16px;
+          width: 50%;
+          position: relative;
+
+          .nextArrow {
+            position: absolute;
+            right: 16px;
+            font-size: 12px;
+            color: gray;
+
+            span {
+              margin-right: 8px;
+            }
+          }
+        }
+
+        .previous {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          padding-top: 16px;
+          padding-bottom: 16px;
+          width: 50%;
+          position: relative;
+
+          .previousArrow {
+            position: absolute;
+            left: 16px;
+            font-size: 12px;
+            color: gray;
+
+            span {
+              margin-left: 8px;
+            }
+          }
+
+          h2 {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+
+    .stepsSection {
+      margin-bottom: 32px;
+      flex: 2;
+      display: flex;
+    }
+  }
+}
+
+.alert {
+  position: absolute;
+  z-index: 1;
+  top: 16px;
+  left: calc(50% - 130px);
+  min-width: 260px;
+}

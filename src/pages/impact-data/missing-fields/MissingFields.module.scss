@@ -1,0 +1,11 @@
+@use '../../../styles/colors';
+
+.container {
+  min-width: 40%;
+}
+
+.closeIcon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}

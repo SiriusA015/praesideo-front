@@ -1,0 +1,41 @@
+@use "../../../../styles/colors";
+
+
+.tabs {
+  margin-top: 14px;
+
+  .tab {
+    & :global(.MuiTab-wrapper) {
+      text-transform: none;
+      width: 100%;
+    }
+  }
+}
+
+.section {
+  padding: 20px;
+
+  &:global(.MuiPaper-root) {
+    height: 100%;
+    min-height: 300px;
+    box-sizing: border-box;
+  }
+}
+
+.sectionTitle:global(.MuiTypography-root) {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.totalTitle {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.sankeyLabels {
+  margin-bottom: 10px;
+}
+
+.chart {
+  padding: 10%;
+}

@@ -1,0 +1,33 @@
+@import "../../styles/colors.scss";
+
+.grey {
+  color: $iconGrey;
+}
+
+.green {
+  color: $iconGreen;
+}
+
+.dark {
+  color: $iconDark;
+}
+
+.red {
+  color: $red;
+}
+
+.blue {
+  color: $hippieBlue;
+}
+
+.white {
+  color: white;
+}
+
+.darkGray {
+  color: $darkGray
+}
+
+.clickable {
+  cursor: pointer;
+}

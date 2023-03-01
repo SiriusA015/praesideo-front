@@ -1,0 +1,48 @@
+// Media queries breakpoints
+$width-mobile-landscape: 600px;
+$width-tablet-portrait: 750px;
+$width-tablet-landscape: 1024px;
+$width-desktop: 1200px;
+$width-wide-desktop: 1600px;
+
+$max-width-content: 1060px;
+$max-width-tooltip: 480px;
+
+$max-width-menu: 812px;
+$min-width-panel: 638px;
+
+//default is mobile-portrait , so we only need breakpoints for the next sizes
+//if we need more please add and give a proper name :)
+//usage: @incluce breakpoint(mobile-landscape){}
+
+@mixin breakpoint($device) {
+  @if $device == "mobile-landscape" {
+    @media screen and (min-width: $width-mobile-landscape) {
+      @content;
+    }
+  }
+
+  @if $device == "tablet-portrait" {
+    @media screen and (min-width: $width-tablet-portrait) {
+      @content;
+    }
+  }
+
+  @if $device == "tablet-landscape" {
+    @media screen and (min-width: $width-tablet-landscape) {
+      @content;
+    }
+  }
+
+  @if $device == "desktop" {
+    @media screen and (min-width: $width-desktop) {
+      @content;
+    }
+  }
+
+  @if $device == "wide-desktop" {
+    @media screen and (min-width: $width-wide-desktop) {
+      @content;
+    }
+  }
+}

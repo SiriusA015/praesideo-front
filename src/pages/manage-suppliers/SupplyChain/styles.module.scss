@@ -1,0 +1,60 @@
+@use "../../../styles/colors";
+
+.selectWrapper {
+  display: flex;
+  justify-content: space-between;
+  > * {
+    flex: 1;
+    margin: 0 10px;
+  }
+}
+
+.dialog {
+  :global(.MuiDialog-paper) {
+    width: 500px;
+    height: 300px;
+  }
+
+  h3 {
+    margin: 10px 0;
+  }
+}
+
+.list {
+  margin-top: 15px;
+}
+
+.table {
+  margin-top: 16px;
+}
+
+.highlight {
+  color: colors.$white;
+  background-color: colors.$olivine;
+}
+
+.icon:global(.MuiButtonBase-root) {
+  width: 42px;
+  height: 42px;
+  padding: 0;
+}
+
+.hiddenDelete:global(.MuiButtonBase-root) {
+  visibility: hidden;
+}
+
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  width: 1px;
+}
+
+.pointer {
+  cursor: pointer;
+}

@@ -1,0 +1,274 @@
+@use "../../styles/colors";
+@use "../../styles/global";
+
+.container {
+  background-color: colors.$promenade;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 0 24px;
+  width: 100%;
+
+  .headContainer {
+    margin-left: 8px;
+    margin-right: 8px;
+
+    .headWrapper {
+      display: flex;
+      margin-bottom: 8px;
+
+      .tabs {
+        margin-top: 8px;
+        margin-left: 16px;
+      }
+
+      .toolbar {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+
+        h3 {
+          margin-top: 8px;
+          margin-right: 16px;
+        }
+
+        .filterButton {
+          padding: 0;
+          min-width: 0;
+          margin-left: 16px;
+
+          .filterIcon {
+            background-color: colors.$white;
+            color: colors.$coolGray;
+            padding: 8px;
+            border: 0.5px solid colors.$botticelli;
+            box-sizing: border-box;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            margin-top: -12px;
+          }
+        }
+      }
+    }
+  }
+
+  .mainSection {
+    overflow: auto;
+    padding-bottom: 32px;
+
+    .panelRoot {
+      padding: 0;
+    }
+
+    .waitingMessage {
+      width: 100%;
+      height: 500px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.filterDrawerContainer {
+  width: 250px;
+  margin: 36px;
+
+  > div {
+    margin-top: 16px;
+  }
+}
+
+.chartContainer {
+  color: colors.$headerColor;
+
+  .information {
+    display: flex;
+    position: relative;
+
+    .tabHeader {
+      position: absolute;
+      right: 0;
+      width: auto;
+    }
+  }
+
+  .tabContent {
+    padding: 32px 0 0 0;
+  }
+
+  .chart {
+    height: 256px;
+
+    canvas {
+      height: 256px !important;
+    }
+  }
+}
+
+
+.temperatureCardGrid {
+  padding-bottom: 14px;
+
+  .temperatureChart {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .temperatureChartHeader {
+      padding: 32px;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      position: relative;
+      height: 200px;
+
+      canvas {
+        position: relative;
+        top: -70px;
+        height: 300px!important;
+        width: 300px!important;
+      }
+
+      .temperature {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 275px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        border: 0.5px solid colors.$botticelli;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        display:table;
+
+        h1 {
+          display:table-cell;
+          vertical-align:middle
+        }
+      }
+
+      .scopeContent {
+        padding-top: 16px;
+        display: flex;
+
+        .additionInformation {
+          text-transform: capitalize;
+          font-size: 12px;
+          line-height: 15px;
+          font-weight: 200;
+          font-style: normal;
+          font-family: Chivo;
+          text-align: center;
+          flex: 3;
+
+          .additionInformationValue {
+            font-family: Chivo-Bold;
+          }
+        }
+      }
+
+      .doughnutChartDegrees {
+        display: flex;
+        margin-top: -140px;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 200;
+        font-style: normal;
+        font-family: Chivo;
+        text-align: center;
+        color: colors.$paleSky;
+
+
+        .left {
+          flex: 2;
+          text-align: left;
+        }
+
+        .right {
+          flex: 2;
+          text-align: right;
+        }
+      }
+    }
+
+    .imageContainer {
+      height: 455px;
+      overflow: hidden;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      margin-top: auto;
+
+      img {
+        height: 100%;
+        margin-left: -100px;
+      }
+    }
+  }
+
+  .categoryContainer {
+    .description {
+      margin-top: 16px;
+    }
+
+    .categoryItem {
+      display: flex;
+      padding-left: 0;
+      padding-right: 0;
+
+      span:global(.MuiTypography-caption) {
+        flex: 1.25;
+        font-family: "Arsenal";
+        font-weight: bold;
+        text-align: end;
+      }
+
+      .progress:global(.MuiLinearProgress-root) {
+        flex: 3;
+        height: 10px;
+        margin-left: 10px;
+        border-radius: 3px;
+      }
+
+      & :global(.horizontal-linear-gauge) {
+        background: linear-gradient(
+                        90deg,
+                        colors.$olivine 0%,
+                        colors.$creamBrulee 50%,
+                        colors.$radical-red 100%
+        );
+      }
+
+      & .progress:global(.MuiLinearProgress-root) {
+        background-color: colors.$aquaHaze;
+      }
+
+      & .progressRed:global(.MuiLinearProgress-root) {
+        & :global(.MuiLinearProgress-bar) {
+          background-color: colors.$radical-red;
+        }
+      }
+      & .progressOrange:global(.MuiLinearProgress-root) {
+        & :global(.MuiLinearProgress-bar) {
+          background-color: colors.$tacao;
+        }
+      }
+      & .progressOlive:global(.MuiLinearProgress-root) {
+        & :global(.MuiLinearProgress-bar) {
+          background-color: colors.$olivine;
+        }
+      }
+      & .progressGreen:global(.MuiLinearProgress-root) {
+        & :global(.MuiLinearProgress-bar) {
+          background-color: colors.$apple;
+        }
+      }
+    }
+  }
+}

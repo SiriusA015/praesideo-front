@@ -1,0 +1,84 @@
+@use '../../styles/colors';
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .item {
+    margin-bottom: 2vh;
+
+    .itemDescription {
+      margin-bottom: 1vh;
+      display: flex;
+      align-items: right;
+
+      h3.label {
+        font-size: 20px !important;
+        margin-top: 4px;
+      }
+
+      .icon {
+        margin-right: 24px;
+        width: 32px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .subItem {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 20px 0;
+      cursor: pointer;
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+  }
+  
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  .step {
+    align-items: center;
+    margin-top: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+
+    .details {
+      display: flex;
+
+      span {
+        margin: 0 4px;
+      }
+
+      .entry {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .active {
+    background-color: colors.$opal;
+    margin-left: -32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 100%;
+  }
+
+  .submit {
+    margin-top: auto;
+    .submitText {
+      margin-right: 4px;
+      font-family: Arsenal;
+    }
+  }
+}
+
+.active {
+  color: colors.$selectedText;
+}

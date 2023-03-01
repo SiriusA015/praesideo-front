@@ -1,0 +1,9 @@
+.formControl:global(.MuiFormControl-root) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  label {
+    margin-right: 16px;
+  }
+}

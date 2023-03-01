@@ -1,0 +1,41 @@
+@use "../../styles/colors.scss";
+
+.available:global(.MuiChip-root) {
+  color: colors.$promenade;
+  background-color: colors.$olivine;
+}
+
+.pending:global(.MuiChip-root) {
+  color: colors.$black;
+  background-color: colors.$creamBrulee;
+}
+
+.partial:global(.MuiChip-root) {
+  color: colors.$black;
+  background-color: colors.$creamBrulee;
+}
+
+.onboard:global(.MuiChip-root) {
+  color: colors.$black;
+  background-color: colors.$porcelain;
+}
+
+.incomplete:global(.MuiChip-root) {
+  color: colors.$black;
+  background-color: colors.$creamBrulee;
+}
+
+.complete:global(.MuiChip-root) {
+  color: colors.$promenade;
+  background-color: colors.$olivine;
+}
+
+.invite:global(.MuiChip-root) {
+  color: colors.$black;
+  background-color: colors.$porcelain;
+}
+
+.invited:global(.MuiChip-root) {
+  color: colors.$promenade;
+  background-color: colors.$olivine;
+}

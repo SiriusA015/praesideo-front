@@ -1,0 +1,48 @@
+@use '../../../styles/colors';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: visible;
+
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  .step {
+    align-items: center;
+    margin-top: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+
+    .details {
+      display: flex;
+
+      span {
+        margin: 0 4px;
+      }
+
+      .entry {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .active {
+    background-color: colors.$opal;
+    margin-left: -32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 100%;
+  }
+
+  .submit {
+    margin-top: auto;
+    .submitText {
+      margin-right: 4px;
+      font-family: Arsenal;
+    }
+  }
+}

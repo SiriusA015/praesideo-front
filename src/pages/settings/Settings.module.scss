@@ -1,0 +1,146 @@
+@use "../../styles/colors";
+@import "../../styles/global";
+
+.container {
+  background-color: colors.$promenade;
+  flex: 1;
+  display: flex;
+  padding: 32px 24px 0 24px;
+  .mainSection {
+    flex: 4;
+    padding-right: 32px;
+    display: flex;
+    flex-direction: column;
+    flex: 10 1;
+    // overflow: scroll;
+    position: relative;
+
+    .title {
+      display: flex;
+      padding-top: 16px;
+      padding-bottom: 32px;
+      span.label {
+        font-family: Arsenal-Bold;
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 8px;
+        margin-top: 2px;
+      }
+    }
+  }
+
+  .rightSection {
+    display: flex;
+    flex: 2 1;
+  }
+
+  .table {
+    margin-bottom: 100px;
+  }
+}
+
+.active, .blocked {
+  color: white;
+  height: 25px;
+  line-height: 25px !important;
+  text-align: center;
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.active {
+  background-color: colors.$fruitSalad;
+}
+
+.blocked {
+  background-color: colors.$red;
+}
+
+.billingModal {
+  background-color: colors.$white;
+  margin: auto;
+  margin-top: 200px;
+  padding: 15px;
+}
+
+.billingModalTitle {
+  background-color: colors.$tiber;
+}
+
+.billingModalFont {
+  font-size: 16px !important;
+  color: colors.$black !important;
+}
+
+.invoiceTableTitle {
+  background-color: colors.$tiber !important;
+  height: 56px;
+}
+
+.invoiceTableTitleText {
+  font-family:'Chivo-Bold' !important;
+  font-size: 22px !important;
+  color: colors.$white !important;
+  font-weight: bold !important;
+}
+
+.buttonGroup {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 17px;
+  top: 15px;
+  z-index: 100;
+}
+
+.pdfDownload {
+  width: 17px;
+  height: 20px;
+}
+
+.copyLocation {
+  position: absolute;
+  right: 5px;
+  top: 0;
+}
+
+.bankAccount {
+  margin-top: 25px;
+  position: relative;
+}
+
+.relation {
+  position: relative;
+}
+
+.modal {
+  margin: auto;
+  width: 800px !important;
+  position: relative;
+}
+
+.font12 {
+  font-family: Arsenal !important;
+  font-style: normal !important;
+  font-weight: normal;
+  font-size: 12px !important; 
+  line-height: 16px !important;
+  text-transform: capitalize !important;
+  margin: 0;
+  
+}
+
+.MuiDataGrid-columnSeparator {
+  display: 'none';
+}
+.MuiDataGrid-root {
+  border: 'none';
+}
+
+.headerCoustomer{
+  background-color: #b6ced0 !important;
+  border-radius: 8px !important;
+}

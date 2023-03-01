@@ -1,0 +1,38 @@
+@use "../../../styles/colors";
+
+.link:global(.MuiTypography-root) {
+  margin: 0 5px;
+}
+
+.table {
+  margin-top: 16px;
+}
+
+.icon:global(.MuiButtonBase-root) {
+  width: 42px;
+  height: 42px;
+}
+
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  width: 1px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.flag {
+  margin-right: 10px;
+}
+
+.plusIcon {
+  margin-right: 8px;
+}

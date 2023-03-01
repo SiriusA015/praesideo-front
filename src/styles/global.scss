@@ -1,0 +1,131 @@
+@use "./colors";
+@import "./fonts";
+
+a {
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+h1 {
+  font-family: Arsenal;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+h2 {
+  font-family: Arsenal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0;
+}
+
+h3 {
+  font-family: Arsenal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0;
+}
+
+h4 {
+  font-family: Chivo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+h5 {
+  font-family: Chivo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+p {
+  color: colors.$textColor;
+  font-family: Arsenal;
+  font-size: 12px;
+  line-height: 2;
+  margin: 0;
+}
+
+.flex1 {
+  width: 100%;
+}
+
+.flex2 {
+  width: calc(50% - 4px);
+}
+
+.flex3 {
+  width: 33%;
+}
+
+.flex4 {
+  width: 24.5%;
+}
+
+.flex5 {
+  width: calc(75% - 4px);
+}
+
+.flex {
+  display: flex;
+}
+
+.carousel-wrapper,
+.carousel,
+.carousel > .slider-wrapper,
+.carousel > .slider-wrapper > .slider {
+  height: 100% !important;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.widget {
+  width: 100%;
+  background-color: white;
+  border: 0.5px solid colors.$botticelli;
+  box-sizing: border-box;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 32px;
+  margin: 8px;
+}
+
+.highlightNumber1 {
+  font-family: Arsenal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 100px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.highlightNumber2 {
+  font-family: Arsenal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin: 0;
+}

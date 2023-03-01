@@ -1,0 +1,81 @@
+@import "../../styles/colors";
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    color: $sundance;
+  }
+
+  p.sectionDescription {
+    margin-top: 21px;
+    margin-bottom: 44px;
+  }
+
+  h2 {
+    margin-top: 6px;
+    margin-bottom: 15px;
+    color: $sundance;
+  }
+
+  p.noAccount {
+    border-bottom: 1px solid $porcelain;
+    line-height: 0.1em;
+    margin: 25px 0;
+    text-align: center;
+    width: 100%;
+
+    span {
+      background: $tiber;
+      padding: 0 10px;
+      color: white;
+    }
+  }
+
+  .mv28 {
+    margin-bottom: 28px !important;
+    margin-top: 28px;
+  }
+
+  .rightAlign {
+    text-align: right;
+  }
+}
+
+.floatBottom {
+  margin-top: 64px;
+}
+
+.hintContainer {
+  padding: 10px 15px;
+  border-radius: 4px;
+  color: white;
+}
+
+.hintContainerTitleIcon {
+  margin-left: -5px;
+  margin-right: 5px;
+}
+
+.hintList:global(.MuiList-padding) {
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+
+.hintItem:global(.MuiListItem-dense) {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.checkboxContainer {
+  margin-bottom: 10px;
+
+  .terms {
+    color: white;
+  }
+}
+
+.field {
+  margin-bottom: 8px;
+}

@@ -1,0 +1,60 @@
+@use "../../../styles/colors";
+
+.selectWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 32px 0;
+
+  > * {
+    flex: 1;
+  }
+
+  button {
+    margin-left: 20px;
+  }
+}
+
+.dialog {
+  :global(.MuiDialog-paper) {
+    width: 500px;
+    height: 200px;
+  }
+}
+
+.formControl:global(.MuiFormControl-root) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  label {
+    margin-right: 16px;
+  }
+}
+
+.tabContent1 {
+  padding: 16px 0 32px 0 !important;
+}
+
+.invoiceMessage {
+  padding-top: 40px !important;
+  text-align: center;
+}
+
+.tabHeader1 {
+  font-size: 14px !important;
+  width: 100%;
+}
+
+.tabHeader2 {
+  font-size: 12px !important;
+}
+
+.confirmButton {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit {
+  width: 160px;
+  padding: 5px !important;
+}

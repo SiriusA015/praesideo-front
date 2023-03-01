@@ -1,0 +1,81 @@
+import { CustomFormConfig } from "../../../../components/CustomForm/CustomForm.model";
+
+export const config: CustomFormConfig = {
+  fields: [
+    {
+      name: "scope",
+      type: "section-title",
+      defaultValue: "",
+      placeholder: "Scope",
+      label: "Scope",
+      flex: 1,
+      description: "tCO2e units",
+    },
+    {
+      name: "scopeNo1",
+      type: "text",
+      defaultValue: "",
+      placeholder: "Scope 1",
+      label: "Scope 1",
+      flex: 3,
+    },
+    {
+      name: "scopeNo2",
+      type: "text",
+      defaultValue: "",
+      placeholder: "Scope 2",
+      label: "Scope 2",
+      flex: 3,
+    },
+    {
+      name: "scopeNo3",
+      type: "text",
+      defaultValue: "",
+      placeholder: "Scope 3",
+      label: "Scope 3",
+      flex: 3,
+    },
+    {
+      name: "emissionSource",
+      type: "section-title",
+      defaultValue: "",
+      placeholder: "Emission Source",
+      label: "Emission Source",
+      flex: 1,
+      description: "tCO2e units",
+    },
+    {
+      name: "carbonCredits",
+      type: "section-title",
+      defaultValue: "",
+      placeholder: "Carbon Credits / Renewable Energy Certifications",
+      label: "Carbon Credits / Renewable Energy Certifications",
+      flex: 1,
+    },
+    {
+      name: "participationOfCarbonCredits",
+      type: "select",
+      defaultValue: "",
+      placeholder: "Participation of Carbon Credits",
+      label: "Participation of Carbon Credits",
+      flex: 1,
+      options: [
+        { label: "Yes", value: "yes" },
+        { label: "No", value: "no" },
+      ],
+    },
+    {
+      name: "carbonCreditsCategoryType",
+      type: "multi-select",
+      defaultValue: "",
+      placeholder: "Carbon Credits Category",
+      label: "Carbon Credits Category",
+      flex: 1,
+      conditionedBy: {
+        field: "participationOfCarbonCredits",
+        value: "yes",
+        disable: false,
+      },
+    },
+  ],
+};

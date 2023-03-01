@@ -1,0 +1,8 @@
+# Ignore artifacts:
+coverage
+.idea
+node_modules
+target
+build
+package-lock.json
+.git

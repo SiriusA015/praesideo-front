@@ -1,0 +1,80 @@
+@use "../../../styles/colors";
+
+.link:global(.MuiTypography-root) {
+  margin: 0 5px;
+}
+
+.tab:global(.MuiTab-root) {
+  margin: 0 10px;
+
+  & :global(.MuiTab-wrapper) {
+    text-transform: none;
+    width: 100%;
+  }
+}
+
+.tabPanel:global(.MuiTabPanel-root) {
+  padding: 0;
+}
+
+.table {
+  margin-top: 16px;
+}
+
+.icon:global(.MuiButtonBase-root) {
+  width: 42px;
+  height: 42px;
+}
+
+.submitButton {
+  white-space: nowrap;
+}
+
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  top: 20px;
+  width: 1px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.section:global(.MuiGrid-item) {
+  margin: 5px 0;
+}
+
+.sectionHeader {
+  padding: 5px 10px;
+  color: colors.$black;
+}
+
+.sectionBody {
+  display: flex;
+  height: calc(100% - 30.8px);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.mailContent {
+  padding: 18.5px 14px;
+  color: rgba(0, 0, 0, 0.38);
+  border: 1px solid rgba(0, 0, 0, 0.26);
+  border-radius: 4px;
+  font-family: Arsenal;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0;
+
+  a {
+    color: rgba(0, 0, 0, 0.38);
+  }
+}
